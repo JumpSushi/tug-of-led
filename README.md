@@ -1,13 +1,6 @@
 
 > Open this page at [https://jumpsushi.github.io/tug-of-led/](https://jumpsushi.github.io/tug-of-led/)
 
-## Edit this project ![Build status badge](https://github.com/jumpsushi/tug-of-led/workflows/MakeCode/badge.svg)
-
-To edit this repository in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/jumpsushi/tug-of-led** and click import
 
 ## Blocks preview
 
@@ -18,10 +11,11 @@ This image may take a few minutes to refresh.
 
 ### Annotations
 
-This is a simple annotation of the code in the order it runs
+>This is a simple annotation of the code in the order it runs
 ![A simple annoation of the order of which the code work](https://raw.githubusercontent.com/JumpSushi/tug-of-led/f575a6fc3319942c20912788db7c0e13b70fb202/blocksbet.png)
 
 ### Changes
+>Changes in the code
 ![A simple annoation of the order of which the code work](https://raw.githubusercontent.com/JumpSushi/tug-of-led/master/Screenshot%202023-02-03%20111134.png)
 ![A simple annoation of the order of which the code work](https://raw.githubusercontent.com/JumpSushi/tug-of-led/master/Screenshot%202023-02-03%20111054.png)
 
