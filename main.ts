@@ -16,7 +16,7 @@ function instructA () {
 }
 function waitforB () {
     music.playTone(262, music.beat(BeatFraction.Breve))
-    WaitUntilBlocks.waitUntilButtonReleased(Button.B)
+    WaitUntilBlocks.waitUntilButtonPressed(Button.B)
     basic.showString("Good!")
 }
 input.onButtonPressed(Button.A, function () {
