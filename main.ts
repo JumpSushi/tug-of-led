@@ -2,31 +2,6 @@ enum RadioMessage {
     message1 = 49434,
     Start = 56380
 }
-function maingame () {
-    while (true) {
-        basic.clearScreen()
-        led.plot(Math.round(rope), 2)
-        if (rope < 0) {
-            Score_A += 1
-            basic.showString("A WON")
-            basic.showString("A Score " + Score_A)
-            basic.showString("B Score " + score_B)
-            rope = 2
-        } else if (rope > 4) {
-            score_B += 1
-            basic.showString("B WON")
-            basic.showString("B Score " + score_B)
-            basic.showString("A Score " + Score_A)
-            rope = 2
-        }
-        if (input.buttonIsPressed(Button.A)) {
-            rope += 0.1
-        }
-        if (input.buttonIsPressed(Button.B)) {
-            rope += -0.1
-        }
-    }
-}
 function instructA () {
     basic.showLeds(`
         . . # . .
@@ -44,9 +19,8 @@ function waitforB () {
     WaitUntilBlocks.waitUntilButtonReleased(Button.B)
     basic.showString("Good!")
 }
-// The input of side A
 input.onButtonPressed(Button.A, function () {
-	
+    rope += 1
 })
 function instructB () {
     basic.showLeds(`
@@ -60,9 +34,8 @@ function instructB () {
     basic.showString("PRESS B")
     waitforB()
 }
-// The input of side B
 input.onButtonPressed(Button.B, function () {
-	
+    rope += -1
 })
 function waitforA () {
     music.playTone(262, music.beat(BeatFraction.Breve))
@@ -70,16 +43,23 @@ function waitforA () {
     basic.showString("Good!")
     instructB()
 }
-let score_B = 0
+let rope = 2
 let Score_A = 0
-let rope = 0
-rope = 3
-Score_A = 0
-score_B = 0
-while (true) {
-    if (input.buttonIsPressed(Button.A)) {
-        instructA()
-    } else if (input.buttonIsPressed(Button.B)) {
-        maingame()
+let score_B = 0
+instructA()
+basic.forever(function () {
+    basic.clearScreen()
+    led.plot(Math.round(rope), 2)
+    if (rope < 0) {
+        Score_A += 1
+        basic.showString("A WON")
+        basic.showString("A Score " + Score_A)
+        basic.showString("B Score " + score_B)
+    } else if (rope > 4) {
+        score_B += 1
+        basic.showString("B WON")
+        basic.showString("B Score " + score_B)
+        basic.showString("A Score " + Score_A)
+        rope = 2
     }
-}
+})
