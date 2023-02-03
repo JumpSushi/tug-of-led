@@ -21,6 +21,10 @@ This image may take a few minutes to refresh.
 This is a simple annotation of the code in the order it runs
 ![A simple annoation of the order of which the code work](https://raw.githubusercontent.com/JumpSushi/tug-of-led/f575a6fc3319942c20912788db7c0e13b70fb202/blocksbet.png)
 
+### Changes
+![A simple annoation of the order of which the code work](
+![A simple annoation of the order of which the code work](https://raw.githubusercontent.com/JumpSushi/tug-of-led/master/Screenshot%202023-02-03%20111054.png)
+
 #### Metadata (used for search, rendering)
 
 * for PXT/microbit
