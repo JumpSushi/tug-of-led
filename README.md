@@ -17,8 +17,7 @@ This image may take a few minutes to refresh.
 ![A rendered view of the blocks](https://github.com/jumpsushi/tug-of-led/raw/master/.github/makecode/blocks.png)
 
 ### Annotations
-
-![A rendered veiw of the diffrence from original code](https://drive.google.com/file/d/1Udmkus3an0rfglucKWZ-xGx8H0entUdB/view?usp=sharing)
+(https://drive.google.com/file/d/1Udmkus3an0rfglucKWZ-xGx8H0entUdB/view?usp=sharing)
 
 #### Metadata (used for search, rendering)
 
