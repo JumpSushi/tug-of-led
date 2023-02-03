@@ -1,15 +1,6 @@
 
 > Open this page at [https://jumpsushi.github.io/tug-of-led/](https://jumpsushi.github.io/tug-of-led/)
 
-## Use as Extension
-
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/jumpsushi/tug-of-led** and import
-
 ## Edit this project ![Build status badge](https://github.com/jumpsushi/tug-of-led/workflows/MakeCode/badge.svg)
 
 To edit this repository in MakeCode.
